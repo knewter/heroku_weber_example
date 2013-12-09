@@ -7,5 +7,6 @@ Example [Weber](https://github.com/0xAX/weber), an [Elixir](http://elixir-lang.o
 $ heroku create --buildpack "https://github.com/goshakkk/heroku-buildpack-elixir.git"
 $ heroku labs:enable websockets
 $ git push heroku master
+$ heroku ps:scale web=1 # Otherwise no web process gets started
 $ heroku open
 ```
